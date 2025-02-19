@@ -1,0 +1,13 @@
+# [[file:../../README.org::*API Token][API Token:2]]
+apiVersion: cert-manager.k8s.cloudflare.com/v1
+kind: OriginIssuer
+metadata:
+  name: prod-issuer
+  namespace: istio-system
+spec:
+  requestType: OriginECC
+  auth:
+    tokenRef:
+      name: cfapi-token
+      key: key
+# API Token:2 ends here
