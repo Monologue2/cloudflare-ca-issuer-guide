@@ -72,3 +72,7 @@ $ kubectl get certificate -A
 NAMESPACE      NAME         READY   SECRET           AGE
 istio-system   example-com   True    example-com-tls   29s
 ```
+
+#### References
+- [origin-ca-issuer](https://github.com/cloudflare/origin-ca-issuer/blob/trunk/deploy/crds/cert-manager.k8s.cloudflare.com_clusteroriginissuers.yaml)
+- [Installing cert-manager](https://cert-manager.io/docs/installation/)
